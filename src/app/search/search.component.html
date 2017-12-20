@@ -1,0 +1,20 @@
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <div class="search-container">
+      <div class="u-search-left">
+        <input type="text" class="" placeholder="搜索课程">
+      </div>
+      <div class="u-search-right">
+        <a routerLink="/index">取消</a>
+      </div>
+    </div>
+    <div *ngFor="let hotdata of hotQueryDatas" [ngStyle]="{'display':localUrl}"
+         class="mui-table-view-cell mui-col-sm-3 mui-col-xs-3 list-item">
+
+      <p>{{hotdata.hotQueryItem}}</p>
+
+    </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,94 @@
+<!--<router-outlet></router-outlet>-->
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <app-header></app-header>
+    <div class="m-allcategoryLists-container">
+      <ul class="u-alllists-box">
+        <li class="u-alllists-item" *ngFor="let allcategory of getsAllcategory; let i = index;">
+          <span *ngIf="i==urlParams.id" data-id="{{allcategory.id}}" class="txt-underline-color"  (click)="requestThisCategory(allcategory.id,$event)"> {{allcategory.name}}</span>
+          <span *ngIf="i!=urlParams.id" data-id="{{allcategory.id}}" (click)="requestThisCategory(allcategory.id,$event)" > {{allcategory.name}}</span>
+          <!--<span *ngIf="i!=urlParams.id" data-id="{{allcategory.id}}" routerLink="/category/{{allcategory.id}}" > {{allcategory.name}}</span>-->
+        </li>
+      </ul>
+    </div>
+
+    <div class="mui-content ">
+
+      <div class="mui-row m-allcategory-lists">
+        <div id="slider" class="mui-slider">
+          <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="../../assets/images/banner2.jpg">
+              </a>
+            </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="../../assets/images/banner1.jpg">
+              </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="../../assets/images/banner2.jpg">
+              </a>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="../../assets/images/banner1.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+          </div>
+        </div>
+
+        <div id="second-cate-set">
+          <div class="mw-capsules" *ngFor="let child  of getsAllcategory;let i=index">
+            <!--Regular list-->
+            <a  *ngIf="i==urlParams.id">
+              <a *ngFor="let one  of child.children">
+                <a href="http://study.163.com/category/pregnant">
+                  <div class="capsule f-toe" style="">
+                    {{one.name}}
+                  </div>
+                </a>
+              </a>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mui-row" *ngFor="let listitem of requestdata.sectionDtoList">
+          <div class="u-divide"></div>
+          <div class="mui-row m-sectionList-container">
+            <div class="m-list-box">
+              <div class="mui-col-sm-12 mui-col-xs-12  u-list-title">
+                <div class="u-custom-title">{{listitem.sectionName!=='null' ? listitem.sectionName : ' '}}</div>
+                <a href="#">
+                  <div class="u-custom-more">{{listitem['wordLinkDto'].name}}</div>
+                </a>
+              </div>
+              <div class="mui-col-sm-6 mui-col-xs-6 m-list-item" *ngFor="let box of listitem.elementDtoList">
+                <a href="#">
+                  <div class="mui-col-sm-12 mui-col-xs-12 u-img-box">
+                    <!--<img src="{{box.photoUrl}}" style="width:100%;height:120px;"/>-->
+                    <img [defaultImage]="defaultImage" [lazyLoad]="box.photoUrl" [offset]="offset" style="width:100%;height:120px;">
+                  </div>
+                  <div class="u-course-title">{{box.name}}</div>
+                  <div class="u-course-price">¥{{null!==box.courseCardVo? box.courseCardVo.yktCourseCardv.price :'' }}</div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+

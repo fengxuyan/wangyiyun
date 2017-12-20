@@ -1,0 +1,213 @@
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.m-allcategoryLists-container {
+  border-top: 1px solid #ddd;
+  background: #fff;
+  height: 3rem;
+  width: 100%;
+  display: inline-block;
+  overflow-x: scroll;
+  margin-top: -0.8rem;
+
+  .u-alllists-box {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    width: auto;
+    //height: 4rem;
+  }
+  .u-alllists-item {
+
+    margin: 0 0.37333rem;
+    positon:absolute;
+    top:0;
+    right:0;
+    font-size: 1rem;
+    color: #3c4a55;
+    position: relative;
+    display: inline-block;
+    //height: 4rem;
+    line-height: 3rem;
+    //padding:2rem;
+  }
+  .txt-underline-color{
+    border-bottom: 3px solid #2cc17b;
+    padding-bottom: 4px;
+  }
+}
+.u-rank0img{
+  width:70%;
+}
+.mui-grid-view.mui-grid-9 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff !important;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.u_img_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.u-rank0txt{
+  display: inline-block;
+  float: left;
+  padding: 0.5rem;
+  width:100%;
+  font-size: 13px;
+  text-align: center;
+
+
+}
+.m-classify-lists{
+  background: #fff;
+  padding: 1rem 0 0 0;
+  ul{
+    padding:0 0.8rem;
+  }
+  li{
+    margin-bottom: 1rem;
+  }
+}
+.mui-slider {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.u-middle-banner{
+  width:100%;
+}
+.u-middle-bannercontainer{
+  padding:0 1rem 1rem 1rem;
+}
+.u-divide{
+  width: 100%;
+  height: 12px;
+  background-color: #f2f4f7;
+}
+
+.m-sectionList-container{
+  background: #fff;
+  .m-list-box{
+    display: table;
+    margin: 0 auto;
+    width: 92%;
+    .u-img-cover{
+      padding-bottom: 0.5rem;
+    }
+    .m-list-item:nth-child(even)
+    {
+      padding:0;
+      padding-right:0.3rem;
+    }
+    .m-list-item:nth-child(odd)
+    {
+      padding:0;
+      padding-left:0.3rem;
+    }
+    .m-list-item{
+      float:left;
+      //padding: 0.4rem;
+      margin-bottom: 0.8rem;
+      .u-img-box{
+
+        //padding-right:0.5rem;
+      }
+      .u-course-title{
+        word-wrap: break-word;
+        word-break: normal;
+        display:block;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        margin-top: 0.2rem;
+        font-size: 16px;
+        line-height: 22px;
+        color: #3c4a55;
+      }
+      .u-course-price{
+        margin-top: 0.16rem;
+        font-size: 16px;
+        line-height: 18px;
+        color: #ff632a;
+      }
+
+    }
+  }
+  .u-list-title{
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    .u-custom-title{
+      float: left;
+      display: inline-block;
+      line-height: 21px;
+      font-size: 17px;
+      font-weight: bold;
+      color: #3c4a55;
+    }
+    .u-custom-more{
+      float: right;
+      display: inline-block;
+      line-height: 21px;
+      font-size: 13px;
+      color: #2cc17b;
+      padding-right: 12px;
+      background-image: url(//edu-image.nosdn.127.net/018482ce-2bfd-435a-ad30-907d6c225fa2.png?imageView&quality=100);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 8px 22px;
+    }
+  }
+
+
+}
+.mw-capsules {
+  padding: 0.58667rem 0 0 3%;
+  /* height: 2.56rem; */
+  font-size: 0;
+}
+.mw-capsules .capsule{
+  max-width: 8.6rem;
+  display: inline-block;
+  margin-right: 0.6rem;
+  margin-bottom: 1.5rem;
+  padding: 2px 1rem;
+  line-height: 2rem;
+  border: 1px solid #D3D8E6;
+  border-radius: 19.45333rem;
+  font-size: 14px;
+  color: #8891a7;
+  float: left;
+}
+.f-toe {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-allcategory-lists{
+  margin-top: -3px;
+  background: #fff;
+
+}

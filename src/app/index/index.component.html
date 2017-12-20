@@ -1,0 +1,148 @@
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <a routerLink="/lazy">lazy</a>
+    <app-header></app-header>
+    <!--右上角弹出菜单-->
+    <div class="mui-content">
+      <div class="mui-row">
+        <div id="slider" class="mui-slider mui-content-padded">
+          <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="../../assets/images/banner2.jpg" >
+              </a>
+            </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="../../assets/images/banner1.jpg" >
+              </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="../../assets/images/banner2.jpg" >
+              </a>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="../../assets/images/banner1.jpg" >
+              </a>
+            </div>
+          </div>
+          <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+          </div>
+        </div>
+      </div>
+      <div class="m-classify-lists">
+        <div class="mui-table-view mui-grid-view mui-grid-9 u-lists-style">
+          <div *ngFor="let classify of rank0" [ngStyle]="{'display':localUrl}"
+               class="mui-table-view-cell mui-col-sm-3 mui-col-xs-3 list-item">
+            <div class="mui-col-sm-8 mui-col-xs-8 u_img_container">
+              <img class="u-rank0img" routerLink="/category/{{classify.id}}" src="{{rank0ImgUrl}}{{classify.id}}.png"/>
+            </div>
+            <div class="u-rank0txt">{{classify.name}}</div>
+          </div>
+        </div>
+        <div class="mui-row u-middle-bannercontainer">
+          <img class="u-middle-banner" src="../../assets/images/banner3.png"   data-preview-src="" data-preview-group="1"/>
+        </div>
+      </div>
+      <div class="mui-row" *ngFor="let listitem of getsLists">
+        <div *ngIf="listitem['wordLinkDto']!==null; then iconlistBlock; else elseBlock">
+          <div class="u-divide"></div>
+          <div class="mui-row m-sectionList-container">
+            <div class="m-list-box">
+              <div class="mui-col-sm-12 mui-col-xs-12  u-list-title">
+                <div class="u-custom-title">{{listitem.sectionName!=='null' ? listitem.sectionName : ' '}}</div>
+                <a href="#">
+                  <div class="u-custom-more">{{listitem['wordLinkDto'].name}}</div>
+                </a>
+              </div>
+              <div class="mui-col-sm-6 mui-col-xs-6 m-list-item" *ngFor="let box of listitem.elementDtoList">
+                <a href="#">
+                  <div class="mui-col-sm-12 mui-col-xs-12 u-img-box">
+                    <img [defaultImage]="defaultImage" [lazyLoad]="box.photoUrl" [offset]="offset" style="width:100%;height:120px;">
+                  </div>
+                  <div class="u-course-title">{{box.name}}</div>
+                  <div class="u-course-price">¥{{null!==box.courseCardVo? box.courseCardVo.yktCourseCardv.price :'' }}
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ng-template #iconlistBlock>
+          <div class="u-divide"></div>
+          <div class="mui-row m-sectionList-container">
+            <div class="m-list-box">
+              <div class="mui-col-sm-12 mui-col-xs-12  u-list-title">
+                <div class="u-custom-title">{{listitem.sectionName!=='null' ? listitem.sectionName : ' '}}</div>
+                <a href="/courseRank?type=0">
+                  <!--<a href="/courseRank">-->
+                  <div class="u-custom-more">{{listitem['wordLinkDto'].name}}</div>
+                </a>
+              </div>
+
+              <div *ngFor="let box of listitem.elementDtoList ; let i = index;" class="">
+                <div *ngIf="0===i" class="mui-col-sm-12 mui-col-xs-12 m-list-item u-img-cover">
+                  <a href="#">
+                    <div class="mui-col-sm-12 mui-col-xs-12 u-img-box">
+                      <img style="width:100%;height:120px;" [defaultImage]="defaultImage" [lazyLoad]="box.photoUrl" [offset]="offset">
+
+                    </div>
+                    <div class="u-course-title">{{box.name}}</div>
+                    <div class="u-course-price">¥{{null!==box.courseCardVo? box.courseCardVo.yktCourseCardv.price :''
+                      }}
+                    </div>
+                  </a>
+                </div>
+                <div *ngIf="0!==i" class="mui-col-sm-6 mui-col-xs-6 m-list-item">
+                  <a href="#">
+                    <div class="mui-col-sm-12 mui-col-xs-12 u-img-box">
+                      <img style="width:100%;height:120px;" [defaultImage]="defaultImage" [lazyLoad]="box.photoUrl" [offset]="offset">
+
+
+                      <!--<img src="{{box.photoUrl}}" style="width:100%;height:120px;"/>-->
+                    </div>
+                    <div class="u-course-title">{{box.name}}</div>
+                    <div class="u-course-price">¥{{null!==box.courseCardVo? box.courseCardVo.yktCourseCardv.price :''
+                      }}
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #elseBlock>
+          <div class="u-divide"></div>
+          <div class="mui-row m-sectionList-container">
+            <div class="m-list-box">
+              <div class="mui-col-sm-12 mui-col-xs-12  u-list-title">
+                <div class="u-custom-title">{{listitem.sectionName!=='null' ? listitem.sectionName : ' '}}</div>
+              </div>
+              <div class="mui-col-sm-12 mui-col-xs-12 u-img-cover" *ngFor="let box of listitem.elementDtoList">
+                <a href="#">
+                  <div class="mui-col-sm-12 mui-col-xs-12 u-img-box">
+                    <img style="width:100%;height:120px;" [defaultImage]="defaultImage" [lazyLoad]="box.photoUrl" [offset]="offset">
+
+
+                    <!--<img src="{{box.photoUrl}}" style="width:100%;"/>-->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div style="position: fixed; right: 4%; top: 80%; z-index: 3; cursor: pointer;display: none" class="top">
+    <img src="../../assets/images/top.png" alt="" style="width:40px;height: 40px;">
+  </div>
+</div>

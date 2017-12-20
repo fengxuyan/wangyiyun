@@ -1,0 +1,50 @@
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <!--<app-header></app-header>-->
+    <!--右上角弹出菜单-->
+    <div class="mui-content">
+      <div class="m-rank-content">
+        <div class="u-rank-tabs-container">
+          <ul class="u-rank-tabs">
+            <li class="u-rank-left"><span class="u-tabs-active">免费排行</span></li>
+            <li class="u-rank-right"><span >畅销排行</span></li>
+          </ul>
+        </div>
+        <div class="u-rank-list">
+          <ul class="">
+            <li class="u-ranklist-li"  *ngFor="let item of rank0;let i =index">
+              <div  *ngIf="0===i">
+              <span class="" >
+                <span  class="u-ranklist-pic-index rankfirst-index">{{i+1}}</span>
+                <img class="first-pic" src={{item.bigPhotoUrl}} />
+              </span>
+                <span class="u-rank-first">
+                <span class="u-ranklist-desc-name">{{item.name}}</span>
+                <span class="u-ranklist-desc-span">
+                  <span class="u-ranklist-desc-light">
+                    {{item.learnerCount}}人学过
+                  </span>
+                </span>
+                </span>
+              </div>
+              <div  class="borderbottom-line" *ngIf="0!==i">
+              <span class="img-container">
+                <span  class="u-ranklist-pic-index">{{i+1}}</span>
+                <img src={{item.smallPhotoUrl}} />
+              </span>
+              <span class="title-container">
+                 <span class="img-title">{{item.name}}</span>
+                <span class="">
+                  <span class="">
+                    {{item.learnerCount}}人学过
+                  </span>
+                </span>
+              </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

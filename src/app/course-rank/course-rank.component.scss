@@ -1,0 +1,142 @@
+.m-rank-content {
+  .u-rank-tabs {
+    background-color: #F7F9FC;
+    height: auto;
+    border-bottom: none;
+    li {
+      display: inline-block;
+      float: left;
+      text-align: center;
+      width: 50%;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #859295;
+      border: 1px solid transparent;
+      margin-bottom: -1;
+      margin-top: -10px;
+      //border:1px solid #ddd;
+      background-color: #F7F9FC;
+      .u-tabs-active {
+        color: #2CC17B;
+        border-bottom: 0.1rem solid #2CC17B;
+        line-height: 0.53333rem;
+        padding: 0.6rem 0.08rem;
+      }
+    }
+  }
+  .u-rank-list {
+    clear: both;
+    background: #fff;
+    .rankfirst-index {
+      top: 22px !important;
+      left: -2px !important;
+    }
+    .u-ranklist-li {
+      clear: both;
+      //border-bottom: 1px solid #E6EAF2;
+      padding: 0.5rem 1rem 0.2rem 1rem;
+      img {
+        width: 100%;
+      }
+    }
+    .u-rank-first {
+      display: block;
+      position: relative;
+      top: -3rem;
+      color: #fff;
+      //height: 0;
+      margin-bottom: -3.09rem;
+      padding-left: 1.4rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      .u-ranklist-desc-name {
+      }
+      .u-ranklist-desc-span {
+        display: block;
+      }
+    }
+    .box-length {
+      padding: 0.9rem 0 0 0;
+    }
+    .u-ranklist-pic-index {
+      width: 32px;
+      //height: 27px;
+      background-position: -17px 6px;
+      background-image: url(//swap.stu.126.net/res/images/wap/sprite/rankList.png?17aa3e6…);
+      background-repeat: no-repeat;
+      background-size: 36px;
+      position: relative;
+      top: 22px;
+      left: -2px;
+      padding: 0.5rem;
+
+    }
+    .u-ranklist-li-pic {
+      display: inline-block;
+      float: left;
+    }
+    .u-ranklist-li-desc {
+      .u-ranklist-desc-span {
+
+      }
+      .u-ranklist-desc-name {
+
+      }
+      .u-ranklist-desc-span {
+        display: block;
+      }
+    }
+    .u-ranklist-desc {
+      display: inline-block;
+      float: left;
+      word-wrap: break-word;
+      word-break: normal;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; /*超出2行显示省略号*/
+      overflow: hidden;
+      //left: 9rem;
+      .u-ranklist-desc-count {
+        display: block;
+      }
+    }
+  }
+}
+.img-container{
+  display: inline-block;
+  margin-top: -19px;
+
+}
+.borderbottom-line{
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #E6EAF2;
+
+  .title-container{
+    display: inline-block;
+    clear: both;
+    top: -5rem;
+    position: relative;
+    float: left;
+    width: 60%;
+    left: 48%;
+    height: 0;
+    font-size: 0.9rem;
+    padding-right: 2.3rem;
+    .img-title{
+      word-wrap: break-word;
+      word-break: normal;
+      text-overflow:ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;/*超出2行显示省略号*/
+      overflow: hidden;
+    }
+
+  }
+
+}

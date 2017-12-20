@@ -1,0 +1,138 @@
+.u-rank0img{
+  width:70%;
+}
+.mui-grid-view.mui-grid-9 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff !important;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   border-right: 0;
+   border-bottom: 0;
+}
+
+.u_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.u-rank0txt{
+  display: inline-block;
+  float: left;
+  padding: 0.5rem;
+  width:100%;
+  font-size: 13px;
+  text-align: center;
+
+
+}
+.m-classify-lists{
+  background: #fff;
+  padding: 1rem 0 0 0;
+  ul{
+    padding:0 0.8rem;
+  }
+  li{
+    margin-bottom: 1rem;
+  }
+}
+.mui-slider {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.u-middle-banner{
+  width:100%;
+}
+.u-middle-bannercontainer{
+  padding:0 1rem 1rem 1rem;
+}
+.u-divide{
+  width: 100%;
+  height: 12px;
+  background-color: #f2f4f7;
+}
+
+.m-sectionList-container{
+  background: #fff;
+.m-list-box{
+  display: table;
+  margin: 0 auto;
+  width: 92%;
+  .u-img-cover{
+    padding-bottom: 0.5rem;
+  }
+  .m-list-item:nth-child(even)
+  {
+    padding:0;
+    padding-right:0.3rem;
+  }
+  .m-list-item:nth-child(odd)
+  {
+    padding:0;
+    padding-left:0.3rem;
+  }
+  .m-list-item{
+    float:left;
+    //padding: 0.4rem;
+    margin-bottom: 0.8rem;
+    .u-img-box{
+
+      //padding-right:0.5rem;
+    }
+    .u-course-title{
+      word-wrap: break-word;
+      word-break: normal;
+      display:block;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      margin-top: 0.2rem;
+      font-size: 16px;
+      line-height: 22px;
+      color: #3c4a55;
+    }
+    .u-course-price{
+      margin-top: 0.16rem;
+      font-size: 16px;
+      line-height: 18px;
+      color: #ff632a;
+    }
+
+  }
+}
+  .u-list-title{
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    .u-custom-title{
+      float: left;
+      display: inline-block;
+      line-height: 21px;
+      font-size: 17px;
+      font-weight: bold;
+      color: #3c4a55;
+    }
+    .u-custom-more{
+      float: right;
+      display: inline-block;
+      line-height: 21px;
+      font-size: 13px;
+      color: #2cc17b;
+      padding-right: 12px;
+      background-image: url(//edu-image.nosdn.127.net/018482ce-2bfd-435a-ad30-907d6c225fa2.png?imageView&quality=100);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 8px 22px;
+    }
+  }
+
+
+}

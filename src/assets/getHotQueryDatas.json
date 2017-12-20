@@ -1,0 +1,306 @@
+{
+  "code": 0,
+  "message": "ok",
+  "result": [
+    {
+      "hotQueryItem": "前端"
+    },
+    {
+      "hotQueryItem": "语言"
+    },
+    {
+      "hotQueryItem": "媒体"
+    },
+    {
+      "hotQueryItem": "课程"
+    },
+    {
+      "hotQueryItem": "项目"
+    },
+    {
+      "hotQueryItem": "小黑"
+    },
+    {
+      "hotQueryItem": "photoshop"
+    },
+    {
+      "hotQueryItem": "web"
+    },
+    {
+      "hotQueryItem": "springboot"
+    },
+    {
+      "hotQueryItem": "游戏"
+    },
+    {
+      "hotQueryItem": "测试"
+    },
+    {
+      "hotQueryItem": "秋叶"
+    },
+    {
+      "hotQueryItem": "thinkphp"
+    },
+    {
+      "hotQueryItem": "ps"
+    },
+    {
+      "hotQueryItem": "设计"
+    },
+    {
+      "hotQueryItem": "运营"
+    },
+    {
+      "hotQueryItem": "计算机"
+    },
+    {
+      "hotQueryItem": "营销"
+    },
+    {
+      "hotQueryItem": "javaweb"
+    },
+    {
+      "hotQueryItem": "html"
+    },
+    {
+      "hotQueryItem": "pr"
+    },
+    {
+      "hotQueryItem": "excel"
+    },
+    {
+      "hotQueryItem": "ppt"
+    },
+    {
+      "hotQueryItem": "原理"
+    },
+    {
+      "hotQueryItem": "制作"
+    },
+    {
+      "hotQueryItem": "jquery"
+    },
+    {
+      "hotQueryItem": "教程"
+    },
+    {
+      "hotQueryItem": "算法"
+    },
+    {
+      "hotQueryItem": "php"
+    },
+    {
+      "hotQueryItem": "vba"
+    },
+    {
+      "hotQueryItem": "数据库"
+    },
+    {
+      "hotQueryItem": "老师"
+    },
+    {
+      "hotQueryItem": "linux"
+    },
+    {
+      "hotQueryItem": "编程"
+    },
+    {
+      "hotQueryItem": "两米"
+    },
+    {
+      "hotQueryItem": "公众"
+    },
+    {
+      "hotQueryItem": "学习"
+    },
+    {
+      "hotQueryItem": "net"
+    },
+    {
+      "hotQueryItem": "吴恩达"
+    },
+    {
+      "hotQueryItem": "四级"
+    },
+    {
+      "hotQueryItem": "jsp"
+    },
+    {
+      "hotQueryItem": "python"
+    },
+    {
+      "hotQueryItem": "mysql"
+    },
+    {
+      "hotQueryItem": "素描"
+    },
+    {
+      "hotQueryItem": "管理"
+    },
+    {
+      "hotQueryItem": "爬虫"
+    },
+    {
+      "hotQueryItem": "开发"
+    },
+    {
+      "hotQueryItem": "ui"
+    },
+    {
+      "hotQueryItem": "入门"
+    },
+    {
+      "hotQueryItem": "spss"
+    },
+    {
+      "hotQueryItem": "js"
+    },
+    {
+      "hotQueryItem": "sql"
+    },
+    {
+      "hotQueryItem": "java"
+    },
+    {
+      "hotQueryItem": "vue"
+    },
+    {
+      "hotQueryItem": "数学"
+    },
+    {
+      "hotQueryItem": "软件"
+    },
+    {
+      "hotQueryItem": "淘宝"
+    },
+    {
+      "hotQueryItem": "线性"
+    },
+    {
+      "hotQueryItem": "统计"
+    },
+    {
+      "hotQueryItem": "ai"
+    },
+    {
+      "hotQueryItem": "分析"
+    },
+    {
+      "hotQueryItem": "产品"
+    },
+    {
+      "hotQueryItem": "手绘"
+    },
+    {
+      "hotQueryItem": "人工智能"
+    },
+    {
+      "hotQueryItem": "程序"
+    },
+    {
+      "hotQueryItem": "李涛"
+    },
+    {
+      "hotQueryItem": "吉他"
+    },
+    {
+      "hotQueryItem": "系统"
+    },
+    {
+      "hotQueryItem": "概率"
+    },
+    {
+      "hotQueryItem": "matlab"
+    },
+    {
+      "hotQueryItem": "unity"
+    },
+    {
+      "hotQueryItem": "网络"
+    },
+    {
+      "hotQueryItem": "css"
+    },
+    {
+      "hotQueryItem": "青年"
+    },
+    {
+      "hotQueryItem": "网页"
+    },
+    {
+      "hotQueryItem": "视频"
+    },
+    {
+      "hotQueryItem": "机器"
+    },
+    {
+      "hotQueryItem": "高数"
+    },
+    {
+      "hotQueryItem": "英语"
+    },
+    {
+      "hotQueryItem": "深度"
+    },
+    {
+      "hotQueryItem": "数据"
+    },
+    {
+      "hotQueryItem": "spring"
+    },
+    {
+      "hotQueryItem": "oracle"
+    },
+    {
+      "hotQueryItem": "日语"
+    },
+    {
+      "hotQueryItem": "会计"
+    },
+    {
+      "hotQueryItem": "react"
+    },
+    {
+      "hotQueryItem": "word"
+    },
+    {
+      "hotQueryItem": "cad"
+    },
+    {
+      "hotQueryItem": "结构"
+    },
+    {
+      "hotQueryItem": "3dmax"
+    },
+    {
+      "hotQueryItem": "node"
+    },
+    {
+      "hotQueryItem": "代数"
+    },
+    {
+      "hotQueryItem": "财务"
+    },
+    {
+      "hotQueryItem": "javascript"
+    },
+    {
+      "hotQueryItem": "实战"
+    },
+    {
+      "hotQueryItem": "ae"
+    },
+    {
+      "hotQueryItem": "摄影"
+    },
+    {
+      "hotQueryItem": "高等数学"
+    },
+    {
+      "hotQueryItem": "基础"
+    },
+    {
+      "hotQueryItem": "android"
+    }
+  ]
+}
